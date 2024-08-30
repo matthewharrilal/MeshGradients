@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		767EB4BE2C7D98A8008524CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4BD2C7D98A8008524CF /* AppDelegate.swift */; };
+		767EB4C02C7D98A8008524CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4BF2C7D98A8008524CF /* SceneDelegate.swift */; };
+		767EB4C22C7D98A8008524CF /* MeshGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4C12C7D98A8008524CF /* MeshGradientViewController.swift */; };
+		767EB4C52C7D98A8008524CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767EB4C32C7D98A8008524CF /* Main.storyboard */; };
+		767EB4C72C7D98A9008524CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767EB4C62C7D98A9008524CF /* Assets.xcassets */; };
+		767EB4CA2C7D98A9008524CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767EB4C82C7D98A9008524CF /* LaunchScreen.storyboard */; };
+		767EB4D52C7D98A9008524CF /* MeshBlobGradientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4D42C7D98A9008524CF /* MeshBlobGradientsTests.swift */; };
+		767EB4DF2C7D98A9008524CF /* MeshBlobGradientsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4DE2C7D98A9008524CF /* MeshBlobGradientsUITests.swift */; };
+		767EB4E12C7D98A9008524CF /* MeshBlobGradientsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4E02C7D98A9008524CF /* MeshBlobGradientsUITestsLaunchTests.swift */; };
+		767EB4F12C7D98F3008524CF /* BlobLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4F02C7D98F3008524CF /* BlobLayer.swift */; };
+		767EB4F32C7D9906008524CF /* FluidGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4F22C7D9905008524CF /* FluidGradientView.swift */; };
+		767EB4F72C814B49008524CF /* ResizableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4F62C814B49008524CF /* ResizableLayer.swift */; };
+		767EB4F92C814BB4008524CF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB4F82C814BB4008524CF /* UIColor+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		767EB4D12C7D98A9008524CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767EB4B22C7D98A8008524CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767EB4B92C7D98A8008524CF;
+			remoteInfo = MeshBlobGradients;
+		};
+		767EB4DB2C7D98A9008524CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767EB4B22C7D98A8008524CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767EB4B92C7D98A8008524CF;
+			remoteInfo = MeshBlobGradients;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		767EB4BA2C7D98A8008524CF /* MeshBlobGradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshBlobGradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		767EB4BD2C7D98A8008524CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		767EB4BF2C7D98A8008524CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		767EB4C12C7D98A8008524CF /* MeshGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientViewController.swift; sourceTree = "<group>"; };
+		767EB4C42C7D98A8008524CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		767EB4C62C7D98A9008524CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767EB4C92C7D98A9008524CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		767EB4CB2C7D98A9008524CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767EB4D02C7D98A9008524CF /* MeshBlobGradientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshBlobGradientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767EB4D42C7D98A9008524CF /* MeshBlobGradientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBlobGradientsTests.swift; sourceTree = "<group>"; };
+		767EB4DA2C7D98A9008524CF /* MeshBlobGradientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshBlobGradientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767EB4DE2C7D98A9008524CF /* MeshBlobGradientsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBlobGradientsUITests.swift; sourceTree = "<group>"; };
+		767EB4E02C7D98A9008524CF /* MeshBlobGradientsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBlobGradientsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		767EB4F02C7D98F3008524CF /* BlobLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobLayer.swift; sourceTree = "<group>"; };
+		767EB4F22C7D9905008524CF /* FluidGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidGradientView.swift; sourceTree = "<group>"; };
+		767EB4F62C814B49008524CF /* ResizableLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLayer.swift; sourceTree = "<group>"; };
+		767EB4F82C814BB4008524CF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767EB4B72C7D98A8008524CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EB4CD2C7D98A9008524CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EB4D72C7D98A9008524CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767EB4B12C7D98A8008524CF = {
+			isa = PBXGroup;
+			children = (
+				767EB4BC2C7D98A8008524CF /* MeshBlobGradients */,
+				767EB4D32C7D98A9008524CF /* MeshBlobGradientsTests */,
+				767EB4DD2C7D98A9008524CF /* MeshBlobGradientsUITests */,
+				767EB4BB2C7D98A8008524CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		767EB4BB2C7D98A8008524CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4BA2C7D98A8008524CF /* MeshBlobGradients.app */,
+				767EB4D02C7D98A9008524CF /* MeshBlobGradientsTests.xctest */,
+				767EB4DA2C7D98A9008524CF /* MeshBlobGradientsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		767EB4BC2C7D98A8008524CF /* MeshBlobGradients */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4EF2C7D98C5008524CF /* Layers */,
+				767EB4EE2C7D98BF008524CF /* Views */,
+				767EB4ED2C7D98B8008524CF /* View Controllers */,
+				767EB4BD2C7D98A8008524CF /* AppDelegate.swift */,
+				767EB4BF2C7D98A8008524CF /* SceneDelegate.swift */,
+				767EB4C32C7D98A8008524CF /* Main.storyboard */,
+				767EB4C62C7D98A9008524CF /* Assets.xcassets */,
+				767EB4C82C7D98A9008524CF /* LaunchScreen.storyboard */,
+				767EB4CB2C7D98A9008524CF /* Info.plist */,
+				767EB4F62C814B49008524CF /* ResizableLayer.swift */,
+				767EB4F82C814BB4008524CF /* UIColor+Extension.swift */,
+			);
+			path = MeshBlobGradients;
+			sourceTree = "<group>";
+		};
+		767EB4D32C7D98A9008524CF /* MeshBlobGradientsTests */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4D42C7D98A9008524CF /* MeshBlobGradientsTests.swift */,
+			);
+			path = MeshBlobGradientsTests;
+			sourceTree = "<group>";
+		};
+		767EB4DD2C7D98A9008524CF /* MeshBlobGradientsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4DE2C7D98A9008524CF /* MeshBlobGradientsUITests.swift */,
+				767EB4E02C7D98A9008524CF /* MeshBlobGradientsUITestsLaunchTests.swift */,
+			);
+			path = MeshBlobGradientsUITests;
+			sourceTree = "<group>";
+		};
+		767EB4ED2C7D98B8008524CF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4C12C7D98A8008524CF /* MeshGradientViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		767EB4EE2C7D98BF008524CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4F22C7D9905008524CF /* FluidGradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		767EB4EF2C7D98C5008524CF /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				767EB4F02C7D98F3008524CF /* BlobLayer.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		767EB4B92C7D98A8008524CF /* MeshBlobGradients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767EB4E42C7D98A9008524CF /* Build configuration list for PBXNativeTarget "MeshBlobGradients" */;
+			buildPhases = (
+				767EB4B62C7D98A8008524CF /* Sources */,
+				767EB4B72C7D98A8008524CF /* Frameworks */,
+				767EB4B82C7D98A8008524CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeshBlobGradients;
+			productName = MeshBlobGradients;
+			productReference = 767EB4BA2C7D98A8008524CF /* MeshBlobGradients.app */;
+			productType = "com.apple.product-type.application";
+		};
+		767EB4CF2C7D98A9008524CF /* MeshBlobGradientsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767EB4E72C7D98A9008524CF /* Build configuration list for PBXNativeTarget "MeshBlobGradientsTests" */;
+			buildPhases = (
+				767EB4CC2C7D98A9008524CF /* Sources */,
+				767EB4CD2C7D98A9008524CF /* Frameworks */,
+				767EB4CE2C7D98A9008524CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767EB4D22C7D98A9008524CF /* PBXTargetDependency */,
+			);
+			name = MeshBlobGradientsTests;
+			productName = MeshBlobGradientsTests;
+			productReference = 767EB4D02C7D98A9008524CF /* MeshBlobGradientsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		767EB4D92C7D98A9008524CF /* MeshBlobGradientsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767EB4EA2C7D98A9008524CF /* Build configuration list for PBXNativeTarget "MeshBlobGradientsUITests" */;
+			buildPhases = (
+				767EB4D62C7D98A9008524CF /* Sources */,
+				767EB4D72C7D98A9008524CF /* Frameworks */,
+				767EB4D82C7D98A9008524CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767EB4DC2C7D98A9008524CF /* PBXTargetDependency */,
+			);
+			name = MeshBlobGradientsUITests;
+			productName = MeshBlobGradientsUITests;
+			productReference = 767EB4DA2C7D98A9008524CF /* MeshBlobGradientsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		767EB4B22C7D98A8008524CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					767EB4B92C7D98A8008524CF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					767EB4CF2C7D98A9008524CF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 767EB4B92C7D98A8008524CF;
+					};
+					767EB4D92C7D98A9008524CF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 767EB4B92C7D98A8008524CF;
+					};
+				};
+			};
+			buildConfigurationList = 767EB4B52C7D98A8008524CF /* Build configuration list for PBXProject "MeshBlobGradients" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 767EB4B12C7D98A8008524CF;
+			productRefGroup = 767EB4BB2C7D98A8008524CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				767EB4B92C7D98A8008524CF /* MeshBlobGradients */,
+				767EB4CF2C7D98A9008524CF /* MeshBlobGradientsTests */,
+				767EB4D92C7D98A9008524CF /* MeshBlobGradientsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		767EB4B82C7D98A8008524CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767EB4CA2C7D98A9008524CF /* LaunchScreen.storyboard in Resources */,
+				767EB4C72C7D98A9008524CF /* Assets.xcassets in Resources */,
+				767EB4C52C7D98A8008524CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EB4CE2C7D98A9008524CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EB4D82C7D98A9008524CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		767EB4B62C7D98A8008524CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767EB4F92C814BB4008524CF /* UIColor+Extension.swift in Sources */,
+				767EB4F32C7D9906008524CF /* FluidGradientView.swift in Sources */,
+				767EB4C22C7D98A8008524CF /* MeshGradientViewController.swift in Sources */,
+				767EB4BE2C7D98A8008524CF /* AppDelegate.swift in Sources */,
+				767EB4F12C7D98F3008524CF /* BlobLayer.swift in Sources */,
+				767EB4C02C7D98A8008524CF /* SceneDelegate.swift in Sources */,
+				767EB4F72C814B49008524CF /* ResizableLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EB4CC2C7D98A9008524CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767EB4D52C7D98A9008524CF /* MeshBlobGradientsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EB4D62C7D98A9008524CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767EB4E12C7D98A9008524CF /* MeshBlobGradientsUITestsLaunchTests.swift in Sources */,
+				767EB4DF2C7D98A9008524CF /* MeshBlobGradientsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		767EB4D22C7D98A9008524CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767EB4B92C7D98A8008524CF /* MeshBlobGradients */;
+			targetProxy = 767EB4D12C7D98A9008524CF /* PBXContainerItemProxy */;
+		};
+		767EB4DC2C7D98A9008524CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767EB4B92C7D98A8008524CF /* MeshBlobGradients */;
+			targetProxy = 767EB4DB2C7D98A9008524CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		767EB4C32C7D98A8008524CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767EB4C42C7D98A8008524CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		767EB4C82C7D98A9008524CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767EB4C92C7D98A9008524CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		767EB4E22C7D98A9008524CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		767EB4E32C7D98A9008524CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767EB4E52C7D98A9008524CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeshBlobGradients/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeshBlobGradients;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		767EB4E62C7D98A9008524CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeshBlobGradients/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeshBlobGradients;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		767EB4E82C7D98A9008524CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeshBlobGradientsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeshBlobGradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeshBlobGradients";
+			};
+			name = Debug;
+		};
+		767EB4E92C7D98A9008524CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeshBlobGradientsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeshBlobGradients.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeshBlobGradients";
+			};
+			name = Release;
+		};
+		767EB4EB2C7D98A9008524CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeshBlobGradientsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeshBlobGradients;
+			};
+			name = Debug;
+		};
+		767EB4EC2C7D98A9008524CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeshBlobGradientsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeshBlobGradients;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		767EB4B52C7D98A8008524CF /* Build configuration list for PBXProject "MeshBlobGradients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767EB4E22C7D98A9008524CF /* Debug */,
+				767EB4E32C7D98A9008524CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767EB4E42C7D98A9008524CF /* Build configuration list for PBXNativeTarget "MeshBlobGradients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767EB4E52C7D98A9008524CF /* Debug */,
+				767EB4E62C7D98A9008524CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767EB4E72C7D98A9008524CF /* Build configuration list for PBXNativeTarget "MeshBlobGradientsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767EB4E82C7D98A9008524CF /* Debug */,
+				767EB4E92C7D98A9008524CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767EB4EA2C7D98A9008524CF /* Build configuration list for PBXNativeTarget "MeshBlobGradientsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767EB4EB2C7D98A9008524CF /* Debug */,
+				767EB4EC2C7D98A9008524CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 767EB4B22C7D98A8008524CF /* Project object */;
+}
